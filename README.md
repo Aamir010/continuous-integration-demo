@@ -55,7 +55,8 @@ Note : You need to put Jenkins, Artifact, and Docker-engine  public key to all s
       
       • We are adopting PHP to create working prototype, but it can leverage all other programing languages as well.
         -> As we know it is hard to manage dependency in PHP projects, so I have created dependency.json file and this file should reside in each project and customize accordingly.
-        <img width="233" alt="screen shot 2015-12-15 at 11 17 56 am" src="https://cloud.githubusercontent.com/assets/13231166/11803118/a4f543a2-a31d-11e5-89e4-73de9ef8ccd9.png">
+<img width="233" alt="screen shot 2015-12-15 at 11 17 56 am" src="https://cloud.githubusercontent.com/assets/13231166/11803118/a4f543a2-a31d-11e5-89e4-73de9ef8ccd9.png"> 
+        
       • You can trigger build from Jenkins with hook or schedule.  So when build was trigger than it will downloaded your source code from Git and dump that code in Artifact server with specific build name and build number so you can easily get what code running or you can also rollback your application from previous build.
       • After pulling code, Dependency. json file decoded and their values are injecting into Jenkins environment variables.
          -> Note:- Dependency. json is loosely coupled so there is no need to tightly follow or hardcoded json it is just need valid json format.
