@@ -1,0 +1,24 @@
+{
+   "id":"DEMO",
+   "cpus":"DEMO",
+   "mem":"DEMO",
+   "container":{
+      "docker":{
+         "image":"DEMO",
+	"network": "BRIDGE",
+         "portMappings":[
+            {
+               "containerPort":80,
+               "hostPort":0,
+               "servicePort":0,
+               "protocol":"tcp"
+            }
+         ]
+      },
+      "type":"DOCKER",
+      "volumes":[
+
+      ],
+      "instances":1
+   }
+}
